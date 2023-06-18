@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Event management system</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+    <link rel="shortcut icon" href="" type="image/x-icon">:
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css">
+  <link href="Bootstrap v5.0.0.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="slick.css">
+  <link rel="stylesheet" href="slick-theme.css">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+     <div class="btn-all">
+      <button class="btton"><a class="links" href="#">Details</a></button>
+    </div> -->
+  <!-- =============================================================
+                     Common Html
+     ============================================================= --->
+  <!---!    <button class="Read_more"><a href="#">Read More</a></button> -->
+  <!-- <div class="title text-center">
+     <h1>why choose us?</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur unde veritatis, ullam tempore doloribus consectetur voluptates aperiam sed deserunt, minima libero! Vero, sequi ut! At quia dolorum amet reiciendis iusto.</p>
+   </div> -->
+
+  <!-- =============================================================
+                     header div 
+     ============================================================= --->
+  <header style="overflow: hidden;">
+    <div class=" nav-2">
+      <nav class="navbar navbar-expand-sm  ">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="website_images/logo/web_logo_2.png" alt=""></a>
+          <button id="manubar" class="manubar d-block d-lg-none">
+            <i class="icofont-navigation-menu"></i>
+          </button>
+          <div class="navbar d-lg-flex d-none d-md-none d-lg-block" id="main-mnue">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </div>
+            <div class="navbar-nav">
+              <a class="nav-link " href="#">About</a>
+            </div>
+            <div class="navbar-nav">
+              <a class="nav-link " href="#">Services</a>
+            </div>
+            <div class="navbar-nav">
+              <a class="nav-link " href="#">Gallery</a>
+            </div>
+            <div class="navbar-nav">
+              <a class="nav-link " href="#">Blog</a>
+            </div>
+            <div class="navbar-nav">
+              <a class="nav-link " href="#">Contact us</a>
+            </div>
+
+          </div>
+
+          <div class=" d-flex  d-none d-lg-block">
+            <div class=" d-flex align-items-center top_head_info">
+              <div class=" social-icon p-0 ">
+                <a href="#"> <i class="icofont-facebook "></i></a>
+                <a href="#"> <i class="icofont-twitter "></i></a>
+                <a href="#"> <i class="icofont-linkedin "></i> </a>
+                <a href="#"> <i class="icofont-vimeo "></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="sticky_head">
+      <nav class="navbar navbar-expand-sm navbar-light ">
+        <div class="container d-flex align-items-center ">
+          <a class="navbar-brand" href="#"><img src="website_images/logo/web_logo_2.png" class="img-fluid " alt=""></a>
+          <div class="d-flex justify-content-end manu-bar ">
+            <button id="manubar" class="manubar d-flex justify-content-end d-block  ml-auto d-lg-none">
+              <i class="icofont-navigation-menu"></i>
+            </button>
+          </div>
+          <div class="ml-auto">
+            <div class="navbar d-lg-flex d-none d-md-none d-lg-block" id="navbarID">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </div>
+              <div class="navbar-nav">
+                <a class="nav-link " href="#">About</a>
+              </div>
+              <div class="navbar-nav">
+                <a class="nav-link " href="#">Services</a>
+              </div>
+              <div class="navbar-nav">
+                <a class="nav-link " href="#">Gallery</a>
+              </div>
+              <div class="navbar-nav">
+                <a class="nav-link " href="#">Blog</a>
+              </div>
+              <div class="navbar-nav">
+                <a class="nav-link " href="#">Contact us</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    </div>
+
+    <div id="mobile-header" class="mobile-header">
+      <div class="manus-item">
+
+        <div id="close" class="close d-flex justify-content-end">
+          <i class="far fa-times p-2" style="font-size: 28px;"></i>
+        </div>
+        <div class="mnus-clone">
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+
+  <!-- =============================================================
+                     Banner div 
+     ============================================================= --->
+
+
+  <div style="overflow: hidden;  background: url('hero-bg.jpg');" class="banner-1">
+    <div class="container">
+      <div class="row banner_slider  ">
+       <div class="items_d d-flex justify-content-center">
+        <div class="items col-12 col-md-9 col-lg-8 ">
+          <div class="row d-flex align-items-center">           
+             <div class="col-3 batches p-0 m-0">
+              <div class="date w-100  ">
+                <h1>03</h1>
+                <h3>march 2022</h3>
+              </div>
+              <div class="time">
+                <h3 class="d-flex">18:00 <span class="mx-2">pm</span></h3>
+              </div>
+            </div>
+            <div class="col-9 m-0 p-0 d-flex align-items-center flex-column text-center ">
+              <div class="ban_content">
+                <h4 class="mb-4"> slider SUBTITLE TEXT HERE</h4> 
+                <h5 class="text-light">$20 with investment today</h5>
+                <h1 class="text-light">start earning</h1>
+               
+                <p class="text-light">Tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet
+                  sagittis id consectetur purus ut faucibus pulvinar elementum, Lorem ipsum dolor sit amet consectetur ?</p>
+                <div class="btn-all">
+                  <button class="btton mx-2"><a class="links" href="#">regester</a></button>
+                  <button class="btton_1 "><a class="links " href="#">buy a ticket</a></button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div> 
+       </div>      
+       
+       <div class="items_d d-flex justify-content-center">
+        <div class="items col-12 col-md-9 col-lg-8 ">
+          <div class="row d-flex align-items-center">           
+             <div class="col-3 batches p-0 m-0">
+              <div class="date w-100  ">
+                <h1>27</h1>
+                <h3>june 2022</h3>
+              </div>
+              <div class="time">
+                <h3 class="d-flex">15:00 <span class="mx-2">pm</span></h3>
+              </div>
+            </div>
+            <div class="col-9 m-0 p-0 d-flex align-items-center flex-column text-center ">
+              <div class="ban_content">
+                <h4 class="mb-4"> slider SUBTITLE TEXT HERE</h4> 
+                <h5 class="text-light">$80 with investment today</h5>
+                <h1 class="text-light">start earning</h1>
+               
+                <p class="text-light">Tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet
+                  sagittis id consectetur purus ut faucibus pulvinar elementum, Lorem ipsum dolor sit amet consectetur ?</p>
+                <div class="btn-all">
+                  <button class="btton mx-2"><a class="links" href="#">regester</a></button>
+                  <button class="btton_1 "><a class="links " href="#">buy a ticket</a></button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div> 
+       </div>     
+         <div class="items_d d-flex justify-content-center">
+        <div class="items col-12 col-md-9 col-lg-8 ">
+          <div class="row d-flex align-items-center">           
+             <div class="col-3 batches p-0 m-0">
+              <div class="date w-100  ">
+                <h1>15</h1>
+                <h3>april 2022</h3>
+              </div>
+              <div class="time">
+                <h3 class="d-flex">12:00 <span class="mx-2">am</span></h3>
+              </div>
+            </div>
+            <div class="col-9 m-0 p-0 d-flex align-items-center flex-column text-center ">
+              <div class="ban_content">
+                <h4 class="mb-4"> slider SUBTITLE TEXT HERE</h4> 
+                <h5 class="text-light">$50 with investment today</h5>
+                <h1 class="text-light">start earning</h1>
+               
+                <p class="text-light">Tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet
+                  sagittis id consectetur purus ut faucibus pulvinar elementum, Lorem ipsum dolor sit amet consectetur ?</p>
+                <div class="btn-all">
+                  <button class="btton mx-2"><a class="links" href="#">regester</a></button>
+                  <button class="btton_1 "><a class="links " href="#">buy a ticket</a></button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div> 
+       </div>
+      </div>
+    </div>
+  </div>
+  <!-- =============================================================
+                     service div 
+     ============================================================= --->
+
+   <div style="overflow: hidden;" class="servi_ces_1">
+     <div class="girds">
+       <div class="container  ">
+         <div class=" row  ">
+           <div class="cards item_poly_1 order-0 order-lg-0 order-md-3 col-lg-3 col-xl-3 col-md-6 mt-5 col-12">
+             <div class="conten  d-flex flex-column align-items-start justify-content-center ">
+               <div class="contents_blog">
+                 <img  class="img-fluid " src="website_images/head_ico/1.png" alt="">
+                 <div class="card_con mt-3">
+                   <h1 class="mt-1">france</h1>
+                   <h5>location</h5>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="cards col-lg-3 col-xl-3 col-md-6 mt-5 col-12">
+             <div class="conten  d-flex flex-column align-items-start justify-content-center ">
+               <div class="contents_blog">
+                 <img  class="img-fluid " src="website_images/head_ico/2.png" alt="">
+                 <div class="card_con mt-3">
+                   <h1 class="mt-1">450</h1>
+                   <h5>speker</h5>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="cards col-lg-3 col-xl-3 col-md-6 mt-5 col-12">
+             <div class="conten  d-flex flex-column align-items-start justify-content-center ">
+               <div class="contents_blog">
+                 <img class="img-fluid "  src="website_images/head_ico/3.png" alt="">
+                 <div class="card_con mt-3">
+                   <h1 class="mt-1">15,000</h1>
+                   <h5>participate</h5>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="cards item_poly_2  col-lg-3 col-xl-3 col-md-6 mt-5 col-12">
+             <div class="conten  d-flex flex-column align-items-start justify-content-center ">
+               <div class="contents_blog">
+                 <img class="img-fluid "  src="website_images/head_ico/4.png" alt="">
+                 <div class="card_con mt-3">
+                   <h1 class="mt-1 ">256</h1>
+                   <h5>sponcer</h5>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+  <!-- =============================================================
+                     About_us div 
+   ============================================================= --->
+
+   <div style="overflow: hidden;" class="pograms">
+     <div class="container">
+       <div class="row">
+         <div class="col-12
+          col-md-12 col-xl-9 col-lg-8">
+             <div class="row">
+               <div class="col-12">
+                 <div class="row conto">
+                   <ul class="nav nav-pills mb-3" id="pills-tab">
+                     <li class="nav-item">
+                       <button class="nav-link  active" data-bs-toggle="pill" data-bs-target="#tab_01" type="button">01. day progarmes</button>
+                     </li>                
+                      <li class="nav-item">
+                       <button class="nav-link " data-bs-toggle="pill" data-bs-target="#tab_02" type="button">02. day progarmes</button>
+                     </li>                 
+                       <li class="nav-item">
+                       <button class="nav-link " data-bs-toggle="pill" data-bs-target="#tab_03" type="button">03. day progarmes</button>
+                     </li>                 
+                      <li class="nav-item">
+                       <button class="nav-link " data-bs-toggle="pill" data-bs-target="#tab_04" type="button">04. day progarmes</button>
+                     </li>
+                   </ul>
+                   <div class="tab-content">
+                     <div class="tab-pane fade show active" id="tab_01">
+                       <div class="accordion " id="tab_01_acording">
+                         <div class="accordion-item">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#acd_1">
+                             <h3 class="d-flex">09:00 <span class="mx-2">am</span></h3>
+                             <h5 class="px-4">programetitle</h5>
+                             <h6>programe sub title</h6>
+                           </button>
+                           <div id="acd_1" class="accordion-collapse collapse show"  data-bs-parent="#tab_01_acording"   >
+                             <div class="accordion-body">
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis id cumque sed
+                                 distinctio sequi eos quidem dicta officiis, nostrum sint accusamus expedita
+                                 molestiasesse? Inventore vero exercitationem deserunt quod porro iste deleniti fuga non
+                                 modinatus molestias assumenda sed at dolores culpa asperiores, facere reiciendis
+                                 provident. Sint expedita consequatur iure voluptatum? Ut magnam quia, deleniti
+                                 explicabo inventore?</p>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="accordion-item">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#acd_2">
+                             <h3 class="d-flex">10:00 <span class="mx-2">am</span></h3>
+                             <h5 class="px-4">programetitle</h5>
+                             <h6>programe sub title</h6>
+                           </button>
+                           <div id="acd_2" class="accordion-collapse collapse"  data-bs-parent="#tab_01_acording"   >
+                             <div class="accordion-body">
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis id cumque sed
+                                 distinctio sequi eos quidem dicta officiis, nostrum sint accusamus expedita
+                                 molestiasesse? Inventore vero exercitationem deserunt quod porro iste deleniti fuga non
+                                 modinatus molestias assumenda sed at dolores culpa asperiores, facere reiciendis
+                                 provident. Sint expedita consequatur iure voluptatum? Ut magnam quia, deleniti
+                                 explicabo inventore?</p>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="accordion-item">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#acd_3">
+                             <h3 class="d-flex">11:00 <span class="mx-2">pm</span></h3>
+                             <h5 class="px-4">programetitle</h5>
+                             <h6>programe sub title</h6>
+                           </button>
+                           <div id="acd_3" class="accordion-collapse collapse"  data-bs-parent="#tab_01_acording"   >
+                             <div class="accordion-body">
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis id cumque sed
+                                 distinctio sequi eos quidem dicta officiis, nostrum sint accusamus expedita
+                                 molestiasesse? Inventore vero exercitationem deserunt quod porro iste deleniti fuga non
+                                 modinatus molestias assumenda sed at dolores culpa asperiores, facere reiciendis
+                                 provident. Sint expedita consequatur iure voluptatum? Ut magnam quia, deleniti
+                                 explicabo inventore?</p>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="accordion-item">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#acd_4">
+                             <h3 class="d-flex">12:00 <span class="mx-2">pm</span></h3>
+                             <h5 class="px-4">programetitle</h5>
+                             <h6>programe sub title</h6>
+                           </button>
+                           <div id="acd_4" class="accordion-collapse collapse"  data-bs-parent="#tab_01_acording"   >
+                             <div class="accordion-body">
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis id cumque sed
+                                 distinctio sequi eos quidem dicta officiis, nostrum sint accusamus expedita
+                                 molestiasesse? Inventore vero exercitationem deserunt quod porro iste deleniti fuga non
+                                 modinatus molestias assumenda sed at dolores culpa asperiores, facere reiciendis
+                                 provident. Sint expedita consequatur iure voluptatum? Ut magnam quia, deleniti
+                                 explicabo inventore?</p>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="accordion-item">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#acd_5">
+                             <h3 class="d-flex">08:00 <span class="mx-2">am</span></h3>
+                             <h5 class="px-4">programetitle</h5>
+                             <h6>programe sub title</h6>
+                           </button>
+                           <div id="acd_5" class="accordion-collapse collapse"  data-bs-parent="#tab_01_acording"   >
+                             <div class="accordion-body">
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis id cumque sed
+                                 distinctio sequi eos quidem dicta officiis, nostrum sint accusamus expedita
+                                 molestiasesse? Inventore vero exercitationem deserunt quod porro iste deleniti fuga non
+                                 modinatus molestias assumenda sed at dolores culpa asperiores, facere reiciendis
+                                 provident. Sint expedita consequatur iure voluptatum? Ut magnam quia, deleniti
+                                 explicabo inventore?</p>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="accordion-item">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#acd_6">
+                             <h3 class="d-flex">06:00 <span class="mx-2">pm</span></h3>
+                             <h5 class="px-4">programetitle</h5>
+                             <h6>programe sub title</h6>
+                           </button>
+                           <div id="acd_6" class="accordion-collapse collapse"  data-bs-parent="#tab_01_acording"   >
+                             <div class="accordion-body">
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis id cumque sed
+                                 distinctio sequi eos quidem dicta officiis, nostrum sint accusamus expedita
+                                 molestiasesse? Inventore vero exercitationem deserunt quod porro iste deleniti fuga non
+                                 modinatus molestias assumenda sed at dolores culpa asperiores, facere reiciendis
+                                 provident. Sint expedita consequatur iure voluptatum? Ut magnam quia, deleniti
+                                 explicabo inventore?</p>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="accordion-item">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#acd_7">
+                             <h3 class="d-flex">11:30 <span class="mx-2">am</span></h3>
+                             <h5 class="px-4">programetitle</h5>
+                             <h6>programe sub title</h6>
+                           </button>
+                           <div id="acd_7" class="accordion-collapse collapse"  data-bs-parent="#tab_01_acording"   >
+                             <div class="accordion-body">
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis id cumque sed
+                                 distinctio sequi eos quidem dicta officiis, nostrum sint accusamus expedita
+                                 molestiasesse? Inventore vero exercitationem deserunt quod porro iste deleniti fuga non
+                                 modinatus molestias assumenda sed at dolores culpa asperiores, facere reiciendis
+                                 provident. Sint expedita consequatur iure voluptatum? Ut magnam quia, deleniti
+                                 explicabo inventore?</p>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>              
+                     <div class="tab-pane fade" id="tab_02">
+                       <div class="accordion " id="tab_02_acording">
+                         <div class="accordion-item">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#acd_1">
+                             <h3 class="d-flex">19:00 <span class="mx-2">pm</span></h3>
+                             <h5 class="px-4">programetitle</h5>
+                             <h6>programe sub title</h6>
+                           </button>
+                           <div id="acd_1" class="accordion-collapse collapse show"  data-bs-parent="#tab_02_acording"   >
+                             <div class="accordion-body">
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis id cumque sed
+                                 distinctio sequi eos quidem dicta officiis, nostrum sint accusamus expedita
+                                 molestiasesse? Inventore vero exercitationem deserunt quod porro iste deleniti fuga non
+                                 modinatus molestias assumenda sed at dolores culpa asperiores, facere reiciendis
+                                 provident. Sint expedita consequatur iure voluptatum? Ut magnam quia, deleniti
+                                 explicabo inventore?</p>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="accordion-item">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#acd_2">
+                             <h3 class="d-flex">05:00 <span class="mx-2">pm</span></h3>
+                             <h5 class="px-4">programetitle</h5>
+                             <h6>programe sub title</h6>
+                           </button>
+                           <div id="acd_2" class="accordion-collapse collapse"  data-bs-parent="#tab_02_acording"   >
+                             <div class="accordion-body">
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis id cumque sed
+                                 distinctio sequi eos quidem dicta officiis, nostrum sint accusamus expedita
+                                 molestiasesse? Inventore vero exercitationem deserunt quod porro iste deleniti fuga non
+                                 modinatus molestias assumenda sed at dolores culpa asperiores, facere reiciendis
+                                 provident. Sint expedita consequatur iure voluptatum? Ut magnam quia, deleniti
+                                 explicabo inventore?</p>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="accordion-item">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#acd_3">
+                             <h3 class="d-flex">13:00 <span class="mx-2">pm</span></h3>
+                             <h5 class="px-4">programetitle</h5>
+                             <h6>programe sub title</h6>
+                           </button>
+                           <div id="acd_3" class="accordion-collapse collapse"  data-bs-parent="#tab_02_acording"   >
+                             <div class="accordion-body">
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis id cumque sed
+                                 distinctio sequi eos quidem dicta officiis, nostrum sint accusamus expedita
+                                 molestiasesse? Inventore vero exercitationem deserunt quod porro iste deleniti fuga non
+                                 modinatus molestias assumenda sed at dolores culpa asperiores, facere reiciendis
+                                 provident. Sint expedita consequatur iure voluptatum? Ut magnam quia, deleniti
+                                 explicabo inventore?</p>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>                    
+                      <div class="tab-pane fade" id="tab_03">
+                       <div class="accordion " id="tab_03_acording">
+                         <div class="accordion-item">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#acd_1">
+                             <h3 class="d-flex">21:00 <span class="mx-2">pm</span></h3>
+                             <h5 class="px-4">programetitle</h5>
+                             <h6>programe sub title</h6>
+                           </button>
+                           <div id="acd_1" class="accordion-collapse collapse show"  data-bs-parent="#tab_03_acording"   >
+                             <div class="accordion-body">
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis id cumque sed
+                                 distinctio sequi eos quidem dicta officiis, nostrum sint accusamus expedita
+                                 molestiasesse? Inventore vero exercitationem deserunt quod porro iste deleniti fuga non
+                                 modinatus molestias assumenda sed at dolores culpa asperiores, facere reiciendis
+                                 provident. Sint expedita consequatur iure voluptatum? Ut magnam quia, deleniti
+                                 explicabo inventore?</p>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="accordion-item">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#acd_2">
+                             <h3 class="d-flex">05:00 <span class="mx-2">pm</span></h3>
+                             <h5 class="px-4">programetitle</h5>
+                             <h6>programe sub title</h6>
+                           </button>
+                           <div id="acd_2" class="accordion-collapse collapse"  data-bs-parent="#tab_03_acording"   >
+                             <div class="accordion-body">
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis id cumque sed
+                                 distinctio sequi eos quidem dicta officiis, nostrum sint accusamus expedita
+                                 molestiasesse? Inventore vero exercitationem deserunt quod porro iste deleniti fuga non
+                                 modinatus molestias assumenda sed at dolores culpa asperiores, facere reiciendis
+                                 provident. Sint expedita consequatur iure voluptatum? Ut magnam quia, deleniti
+                                 explicabo inventore?</p>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="accordion-item">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#acd_3">
+                             <h3 class="d-flex">13:00 <span class="mx-2">pm</span></h3>
+                             <h5 class="px-4">programetitle</h5>
+                             <h6>programe sub title</h6>
+                           </button>
+                           <div id="acd_3" class="accordion-collapse collapse"  data-bs-parent="#tab_03_acording"   >
+                             <div class="accordion-body">
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis id cumque sed
+                                 distinctio sequi eos quidem dicta officiis, nostrum sint accusamus expedita
+                                 molestiasesse? Inventore vero exercitationem deserunt quod porro iste deleniti fuga non
+                                 modinatus molestias assumenda sed at dolores culpa asperiores, facere reiciendis
+                                 provident. Sint expedita consequatur iure voluptatum? Ut magnam quia, deleniti
+                                 explicabo inventore?</p>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>                  
+                       <div class="tab-pane fade" id="tab_04">
+                       <div class="accordion " id="tab_04_acording">
+                         <div class="accordion-item">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#acd_1">
+                             <h3 class="d-flex">05:00 <span class="mx-2">pm</span></h3>
+                             <h5 class="px-4">programetitle</h5>
+                             <h6>programe sub title</h6>
+                           </button>
+                           <div id="acd_1" class="accordion-collapse collapse show"  data-bs-parent="#tab_04_acording"   >
+                             <div class="accordion-body">
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis id cumque sed
+                                 distinctio sequi eos quidem dicta officiis, nostrum sint accusamus expedita
+                                 molestiasesse? Inventore vero exercitationem deserunt quod porro iste deleniti fuga non
+                                 modinatus molestias assumenda sed at dolores culpa asperiores, facere reiciendis
+                                 provident. Sint expedita consequatur iure voluptatum? Ut magnam quia, deleniti
+                                 explicabo inventore?</p>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="accordion-item">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#acd_2">
+                             <h3 class="d-flex">05:00 <span class="mx-2">pm</span></h3>
+                             <h5 class="px-4">programetitle</h5>
+                             <h6>programe sub title</h6>
+                           </button>
+                           <div id="acd_2" class="accordion-collapse collapse"  data-bs-parent="#tab_04_acording"   >
+                             <div class="accordion-body">
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis id cumque sed
+                                 distinctio sequi eos quidem dicta officiis, nostrum sint accusamus expedita
+                                 molestiasesse? Inventore vero exercitationem deserunt quod porro iste deleniti fuga non
+                                 modinatus molestias assumenda sed at dolores culpa asperiores, facere reiciendis
+                                 provident. Sint expedita consequatur iure voluptatum? Ut magnam quia, deleniti
+                                 explicabo inventore?</p>
+                             </div>
+                           </div>
+                         </div>
+
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+           </div>
+
+         </div>        
+            <div class="col-12  col-xl-3 col-lg-4 col-md-12  sec_2 p-0 mt-5">
+              <div style="background: linear-gradient(to right, #272d5fc7, #b6b6b6c7), url('website_images/gallery/5.png');" class="guest d-flex flex-column justify-content-between">
+                  <div class="btn-all">
+                    <button class="btton"><a class="links" href="#">read more</a></button>
+                  </div>
+                  <div  class="details">
+                    <h3 class="d-flex mb-4">11:30 <span class="mx-2">am</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing quas eveniet ipsam dolorem neque?</p>
+                  <h6>surprise guest</h6>
+                  <h5>md nahid hasan</h5>
+                  </div>
+              </div>    
+               <div style="  background: linear-gradient(to right, #272d5fc7, #272d5fc7), url('website_images/gallery/3.png');" class="payment">
+                  <div class="btn-all">
+                    <button class="btton p-1"><a class="links" href="#">read more</a></button>
+                  </div>
+                  <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur quas?</p>
+                  </div>
+                  <a href="http://"><img src="website_images/icon_s/payment.png" alt=""></a>
+              </div>
+           </div>
+       </div>
+     </div>
+ </div>
+
+
+  <!-- =============================================================
+                     events div 
+   ============================================================= --->  
+   <div style="overflow: hidden;" class="events">
+     <div class="container">
+       <div class="row">
+         <div class="col-12 col-md-12 col-lg-6">
+           <img class="img-fluid" src="website_images/img/event_with_camera.png" alt="">
+         </div>
+
+         <div class="col-12 col-md-12 col-lg-6 event_content">
+           <div class="titles  ">
+             <h6>subtilte text here</h6>
+             <h4>corporate</h4>
+             <h2>events</h2>
+           </div>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil quaerat id eum laboriosam dolore quo veniam, tenetur sapiente nobis culpa nam modi optio rerum, minus omnis ipsum molestias sunt itaque corporis porro reprehenderit. Consequuntur, obcaecati. Corrupti ea quos eaque incidunt, nesciunt itaque voluptate quam perspiciatis odit ut nam esse, quod a! Id deleniti esse possimus quis dolorum eius voluptas magnam.</p>
+           <div class="btn-all">
+            <button class="btton"><a class="links" href="#">read more</a></button>
+          </div>
+          </div>
+       </div>
+     </div>
+</div>  
+
+<!-- =============================================================
+                     events div 
+============================================================= --->  
+
+   <div style="overflow: hidden;" class="fetures">
+     <div class="container">
+       <div class="titles mb-5 text-center  ">
+         <h6>subtilte text here</h6>
+         <h4>corporate</h4>
+         <h2>the fretures</h2>
+       </div>
+       <div class=" row ">
+        <div class="cards col-lg-4 col-xl-3 col-md-6 mt-5 col-12">
+          <div class="conten  d-flex flex-column align-items-start justify-content-center ">
+            <div class="contents_blog">
+             <div class="position-relative img">
+              <img src="website_images/icon_s/1.png" alt="">
+             </div>
+              <div class="card_con mt-3">
+                <h5><a href="#" class="text-light">fetures text here</a></h5>
+                <h5>subtitle text here</h5>
+              </div>
+            </div>
+            <div class="details">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus consectetur vero laborum veritatis facere laboriosam?</p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>      
+          <div class="cards col-lg-4 col-xl-3 col-md-6 mt-5 col-12">
+          <div class="conten  d-flex flex-column align-items-start justify-content-center ">
+            <div class="contents_blog">
+             <div class="position-relative img">
+              <img src="website_images/icon_s/2.png" alt="">
+             </div>
+              <div class="card_con mt-3">
+                <h5><a href="#" class="text-light">fetures text here</a></h5>
+                <h5>subtitle text here</h5>
+              </div>
+            </div>
+            <div class="details">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus consectetur vero laborum veritatis facere laboriosam?</p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>      
+          <div class="cards col-lg-4 col-xl-3 col-md-6 mt-5 col-12">
+          <div class="conten  d-flex flex-column align-items-start justify-content-center ">
+            <div class="contents_blog">
+             <div class="position-relative img">
+              <img src="website_images/icon_s/3.png" alt="">
+             </div>
+              <div class="card_con mt-3">
+                <h5><a href="#" class="text-light">fetures text here</a></h5>
+                <h5>subtitle text here</h5>
+              </div>
+            </div>
+            <div class="details">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus consectetur vero laborum veritatis facere laboriosam?</p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>     
+           <div class="cards col-lg-4 col-xl-3 col-md-6 mt-5 col-12">
+          <div class="conten  d-flex flex-column align-items-start justify-content-center ">
+            <div class="contents_blog">
+             <div class="position-relative img">
+              <img src="website_images/icon_s/4.png" alt="">
+             </div>
+              <div class="card_con mt-3">
+                <h5><a href="#" class="text-light">fetures text here</a></h5>
+                <h5>subtitle text here</h5>
+              </div>
+            </div>
+            <div class="details">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus consectetur vero laborum veritatis facere laboriosam?</p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>      
+          <div class="cards col-lg-4 col-xl-3 col-md-6 mt-5 col-12">
+          <div class="conten  d-flex flex-column align-items-start justify-content-center ">
+            <div class="contents_blog">
+             <div class="position-relative img">
+              <img src="website_images/icon_s/5.png" alt="">
+             </div>
+              <div class="card_con mt-3">
+                <h5><a href="#" class="text-light">fetures text here</a></h5>
+                <h5>subtitle text here</h5>
+              </div>
+            </div>
+            <div class="details">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus consectetur vero laborum veritatis facere laboriosam?</p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>     
+           <div class="cards col-lg-4 col-xl-3 col-md-6 mt-5 col-12">
+          <div class="conten  d-flex flex-column align-items-start justify-content-center ">
+            <div class="contents_blog">
+             <div class="position-relative img">
+              <img src="website_images/icon_s/6.png" alt=""> h
+             </div>
+              <div class="card_con mt-3">
+                <h5><a href="#" class="text-light">fetures text here</a></h5>
+                <h5>subtitle text here</h5>
+              </div>
+            </div>
+            <div class="details">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus consectetur vero laborum veritatis facere laboriosam?</p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>  
+
+            <div class="cards col-lg-4 col-xl-3 col-md-6 mt-5 col-12">
+          <div class="conten  d-flex flex-column align-items-start justify-content-center ">
+            <div class="contents_blog">
+             <div class="position-relative img">
+              <img src="website_images/icon_s/7.png" alt="">
+             </div>
+              <div class="card_con mt-3">
+                <h5><a href="#" class="text-light">fetures text here</a></h5>
+                <h5>subtitle text here</h5>
+              </div>
+            </div>
+            <div class="details">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus consectetur vero laborum veritatis facere laboriosam?</p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>     
+           <div class="cards col-lg-4 col-xl-3 col-md-6 mt-5 col-12">
+          <div class="conten  d-flex flex-column align-items-start justify-content-center ">
+            <div class="contents_blog">
+             <div class="position-relative img">
+              <img src="website_images/icon_s/8.png" alt="">
+             </div>
+              <div class="card_con mt-3">
+                <h5><a href="#" class="text-light">fetures text here</a></h5>
+                <h5>subtitle text here</h5>
+              </div>
+            </div>
+            <div class="details">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus consectetur vero laborum veritatis facere laboriosam?</p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+   </div>
+
+   <!-- =============================================================
+                     events div 
+============================================================= ---> 
+
+   <div style="overflow: hidden;  background: linear-gradient(to right, #272d5fc7, #272d5fc7), url('event_left.jpg');" class="event_left">
+     <div class="container">
+       <div class="row d-flex align-items-center">
+        <div class="col-12 col-lg-4">
+          <div class="titles mb-5  ">
+            <h6>subtilte text here</h6>
+            <h4 class="text-light ">event</h4>
+            <h2 class="text-light ">left time</h2>
+            <div class="btn-all">
+              <button class="btton"><a class="links" href="#">buy a tiket</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="row p-0">
+            <div class="col-3 mt-0 mt-md-2 mt-lg-0 time"> <h2>16</h2> <p>days</p></div>
+            <div class="col-3 mt-0 mt-md-2 mt-lg-0 time"> <h2>24</h2> <p>hours</p></div>
+            <div class="col-3 mt-0 mt-md-2 mt-lg-0 time"> <h2>40</h2> <p>minutes</p></div>
+            <div class="col-3 mt-0 mt-md-2 mt-lg-0 time"> <h2>04</h2> <p>seconds</p></div>
+          </div>
+        </div>
+       </div>
+   </div>
+   </div>
+
+     <!-- =============================================================
+                           speker div
+     ============================================================= --->
+     <div style="overflow: hidden;" class="spekers">
+      <div class="container">
+        <div class="titles mb-5 text-center  ">
+          <h6>subtilte text here</h6>
+          <h4>corporate</h4>
+          <h2>speakers</h2>
+        </div>
+          <div id="spekers" class="row">
+            <div class="col-12 col-md-6 col-lg-4 ">
+              <div class="cor_person">
+                <div class="corp_prof">
+                  <img src="website_images/speakers/spekar_6.png" class="img-fluid" alt="">
+                </div>
+                <div class="per_about">
+                  <div>
+                    <h4 class="name">Md Nahid Hasan</h4>
+                    <p>speker</p>
+                    <ul class="social_ico_set">
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-twitter"></i></a></i></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 ">
+              <div class="cor_person">
+                <div class="corp_prof">
+                  <img src="website_images/speakers/spekar_3.png" class="img-fluid" alt="">
+                </div>
+                <div class="per_about">
+                  <div>
+                    <h4 class="name">Md Nahid Hasan</h4>
+                    <p>speker</p>
+                    <ul class="social_ico_set">
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-twitter"></i></a></i></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 ">
+              <div class="cor_person">
+                <div class="corp_prof">
+                  <img src="website_images/speakers/spekar_1.png" class="img-fluid" alt="">
+                </div>
+                <div class="per_about">
+                  <div>
+                    <h4 class="name">Md Nahid Hasan</h4>
+                    <p>speker</p>
+                    <ul class="social_ico_set">
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-twitter"></i></a></i></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 ">
+              <div class="cor_person">
+                <div class="corp_prof">
+                  <img src="website_images/speakers/spekar_5.png" class="img-fluid" alt="">
+                </div>
+                <div class="per_about">
+                  <div>
+                    <h4 class="name">Md Nahid Hasan</h4>
+                    <p>speker</p>
+                    <ul class="social_ico_set">
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-twitter"></i></a></i></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 ">
+              <div class="cor_person">
+                <div class="corp_prof">
+                  <img src="website_images/speakers/spekar_4.png" class="img-fluid" alt="">
+                </div>
+                <div class="per_about">
+                  <div>
+                    <h4 class="name">Md Nahid Hasan</h4>
+                    <p>speker</p>
+                    <ul class="social_ico_set">
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-twitter"></i></a></i></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 ">
+              <div class="cor_person">
+                <div class="corp_prof">
+                  <img src="website_images/speakers/spekar_2.png" class="img-fluid" alt="">
+                </div>
+                <div class="per_about">
+                  <div>
+                    <h4 class="name">Md Nahid Hasan</h4>
+                    <p>speker</p>
+                    <ul class="social_ico_set">
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-twitter"></i></a></i></li>
+                      <li><a class="social_icons " href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+     <!-- =============================================================
+                           events div
+     ============================================================= --->
+     <div style="overflow: hidden;" class="events_grid">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-6 p-0">
+            <img class="img-fluid" src="website_images/img/corparte_events_1.png" alt="">
+          </div>
+ 
+          <div class="col-12 col-md-12 col-lg-6 event_content p-5">
+            <div class="titles  ">
+              <h6>subtilte text here</h6>
+              <h4>corporate</h4>
+              <h2>events</h2>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil quaerat id eum laboriosam dolore quo veniam, tenetur sapiente nobis culpa nam modi optio rerum, minus omnis ipsum molestias sunt itaque corporis porro reprehenderit. Consequuntur, obcaecati. Corrupti ea quos eaque incidunt, nesciunt itaque voluptate quam perspiciatis odit ut nam esse, quod a!</p>
+            <div class="btn-all">
+             <button class="btton hove_1"><a class="links" href="#">read more</a></button>
+           </div>
+           </div>
+        </div>      
+        
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-6 event_content p-5">
+            <div class="titles  ">
+              <h6>subtilte text here</h6>
+              <h4>corporate</h4>
+              <h2>events</h2>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil quaerat id eum laboriosam dolore quo veniam, tenetur sapiente nobis culpa nam modi optio rerum, minus omnis ipsum molestias sunt itaque corporis porro reprehenderit. Consequuntur, obcaecati. Corrupti ea quos eaque incidunt, nesciunt itaque voluptate quam perspiciatis odit ut nam esse, quod a!</p>
+            <div class="btn-all">
+             <button class="btton hove_2"><a class="links" href="#">read more</a></button>
+           </div>
+           </div>
+          <div class="col-12 col-md-12 col-lg-6 p-0">
+            <img class="img-fluid" src="website_images/img/corparte_events_2.png" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+           <!-- =============================================================
+                           tiket_card div
+     ============================================================= --->
+
+     <div style="overflow: hidden;" id="tiket_card" class="tiket_card">
+      <div class="container">
+        <div class="titles mb-5 text-center  ">
+          <h6>subtilte text here</h6>
+          <h4>corporate</h4>
+          <h2>ticket prinching</h2>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4 col-xl-4">
+            <div class="ticket_content">
+               <div class="ticket_part_1">
+                 <div class="dash"></div>
+                   <img src="website_images/icon_s/bulding.png" alt="">
+                   <h3 class=" prize_tiket">$99</h3>
+                   <h4 class="pakage_name">bronce pakage</h4>
+                  </div>
+               <div class="ticket_part_2">
+                 <ul>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                 </ul>
+               </div>
+               <div class="ticket_part_3">
+                 <div class="link_for_reg">
+                   <div class="d-flex align-items-center">
+                     <a href="# ">regester today</a>
+                     <i class="fas fa-chevron-right fa-fw "></i>
+                   </div>
+                 </div>
+                <div class="dash"></div>
+               </div>
+            </div>
+          </div>      
+          
+          <div class="col-12 col-lg-4 col-xl-4">
+            <div class="ticket_content">
+               <div class="ticket_part_1">
+                 <div class="dash"></div>
+                   <img src="website_images/icon_s/bulding.png" alt="">
+                   <h3 class=" prize_tiket">$99</h3>
+                   <h4 class="pakage_name">bronce pakage</h4>
+                  </div>
+               <div class="ticket_part_2">
+                 <ul>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                 </ul>
+               </div>
+               <div class="ticket_part_3">
+                 <div class="link_for_reg">
+                   <div class="d-flex align-items-center">
+                     <a href="# ">regester today</a>
+                     <i class="fas fa-chevron-right fa-fw "></i>
+                   </div>
+                 </div>
+                <div class="dash"></div>
+               </div>
+            </div>
+          </div>     
+    
+          <div class="col-12 col-lg-4 col-xl-4">
+            <div class="ticket_content">
+               <div class="ticket_part_1">
+                 <div class="dash"></div>
+                   <img src="website_images/icon_s/bulding.png" alt="">
+                   <h3 class=" prize_tiket">$99</h3>
+                   <h4 class="pakage_name">bronce pakage</h4>
+                  </div>
+               <div class="ticket_part_2">
+                 <ul>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                 </ul>
+               </div>
+               <div class="ticket_part_3">
+                 <div class="link_for_reg">
+                   <div class="d-flex align-items-center">
+                     <a href="# ">regester today</a>
+                     <i class="fas fa-chevron-right fa-fw "></i>
+                   </div>
+                 </div>
+                <div class="dash"></div>
+               </div>
+            </div>
+          </div>      
+          
+          <div class="col-12 col-lg-4 col-xl-4">
+            <div class="ticket_content">
+               <div class="ticket_part_1">
+                 <div class="dash"></div>
+                   <img src="website_images/icon_s/bulding.png" alt="">
+                   <h3 class=" prize_tiket">$99</h3>
+                   <h4 class="pakage_name">bronce pakage</h4>
+                  </div>
+               <div class="ticket_part_2">
+                 <ul>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                 </ul>
+               </div>
+               <div class="ticket_part_3">
+                 <div class="link_for_reg">
+                   <div class="d-flex align-items-center">
+                     <a href="# ">regester today</a>
+                     <i class="fas fa-chevron-right fa-fw "></i>
+                   </div>
+                 </div>
+                <div class="dash"></div>
+               </div>
+            </div>
+          </div>      
+          
+          
+          <div class="col-12 col-lg-4 col-xl-4">
+            <div class="ticket_content">
+               <div class="ticket_part_1">
+                 <div class="dash"></div>
+                   <img src="website_images/icon_s/bulding.png" alt="">
+                   <h3 class=" prize_tiket">$99</h3>
+                   <h4 class="pakage_name">bronce pakage</h4>
+                  </div>
+               <div class="ticket_part_2">
+                 <ul>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                 </ul>
+               </div>
+               <div class="ticket_part_3">
+                 <div class="link_for_reg">
+                   <div class="d-flex align-items-center">
+                     <a href="# ">regester today</a>
+                     <i class="fas fa-chevron-right fa-fw "></i>
+                   </div>
+                 </div>
+                <div class="dash"></div>
+               </div>
+            </div>
+          </div>          
+          <div class="col-12 col-lg-4 col-xl-4">
+            <div class="ticket_content">
+               <div class="ticket_part_1">
+                 <div class="dash"></div>
+                   <img src="website_images/icon_s/bulding.png" alt="">
+                   <h3 class=" prize_tiket">$99</h3>
+                   <h4 class="pakage_name">bronce pakage</h4>
+                  </div>
+               <div class="ticket_part_2">
+                 <ul>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                   <li> <i class="icofont-tick-mark"></i> Lorem ipsum dolor sit amet.</li>
+                 </ul>
+               </div>
+               <div class="ticket_part_3">
+                 <div class="link_for_reg">
+                   <div class="d-flex align-items-center">
+                     <a href="# ">regester today</a>
+                     <i class="fas fa-chevron-right fa-fw "></i>
+                   </div>
+                 </div>
+                <div class="dash"></div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- =============================================================
+                           Gellary div
+     ============================================================= --->
+     <div style="overflow: hidden;" class="Gellary">
+       <div class="container">
+         <div class="titles mb-5 text-center  ">
+           <h6>subtilte text here</h6>
+           <h4>corporate</h4>
+           <h2>Gallery</h2>
+         </div>
+         <div id="Gellary" class="row">
+
+           <div class="col-12 col-md-6 col-lg-4 ">
+             <div class="cor_person">
+               <div class="corp_prof">
+                 <img src="website_images/gallery/1.png" class="img-fluid" alt="">
+               </div>
+               <div class="per_about">
+                 <div>
+                   <h4 class="name">Md Nahid Hasan</h4>
+                   <a href="#">Full screen</a>
+                 </div>
+               </div>
+               <div class="ani_div">
+                 <div class="ani_bor">.
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <div class="col-12 col-md-6 col-lg-4 ">
+             <div class="cor_person">
+               <div class="corp_prof">
+                 <img src="website_images/gallery/2.png" class="img-fluid" alt="">
+               </div>
+               <div class="per_about">
+                 <div>
+                   <h4 class="name">Md Nahid Hasan</h4>
+                   <a href="#">Full screen</a>
+                 </div>
+               </div>
+               <div class="ani_div">
+                 <div class="ani_bor">.
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <div class="col-12 col-md-6 col-lg-4 ">
+             <div class="cor_person">
+               <div class="corp_prof">
+                 <img src="website_images/gallery/3.png" class="img-fluid" alt="">
+               </div>
+               <div class="per_about">
+                 <div>
+                   <h4 class="name">Md Nahid Hasan</h4>
+                   <a href="#">Full screen</a>
+                 </div>
+               </div>
+               <div class="ani_div">
+                 <div class="ani_bor">.
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <div class="col-12 col-md-6 col-lg-4 ">
+             <div class="cor_person">
+               <div class="corp_prof">
+                 <img src="website_images/gallery/4.png" class="img-fluid" alt="">
+               </div>
+               <div class="per_about">
+                 <div>
+                   <h4 class="name">Md Nahid Hasan</h4>
+                   <a href="#">Full screen</a>
+                 </div>
+               </div>
+               <div class="ani_div">
+                 <div class="ani_bor">.
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <div class="col-12 col-md-6 col-lg-4 ">
+             <div class="cor_person">
+               <div class="corp_prof">
+                 <img src="website_images/gallery/6.png" class="img-fluid" alt="">
+               </div>
+               <div class="per_about">
+                 <div>
+                   <h4 class="name">Md Nahid Hasan</h4>
+                   <a href="#">Full screen</a>
+                 </div>
+               </div>
+               <div class="ani_div">
+                 <div class="ani_bor">.
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <div class="col-12 col-md-6 col-lg-4 ">
+             <div class="cor_person">
+               <div class="corp_prof">
+                 <img src="website_images/gallery/5.png" class="img-fluid" alt="">
+               </div>
+               <div class="per_about">
+                 <div>
+                   <h4 class="name">Md Nahid Hasan</h4>
+                   <a href="#">Full screen</a>
+                 </div>
+               </div>
+               <div class="ani_div">
+                 <div class="ani_bor">.
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+         <!-- =============================================================
+                           form div
+     ============================================================= --->
+     <div style="overflow: hidden;" class="transportaion">
+      <div class="container">
+        <div class="titles mb-5 text-center  ">
+          <h6>subtilte text here</h6>
+          <h4>corporate</h4>
+          <h2>transporataion</h2>
+        </div>
+      </div>
+      <div class="row container_section">
+         <div class="forms col-12">
+           <div class="contact_form">
+            <form action="" method="post" class=""></form>
+            <input placeholder="Name Shurename" type="text"> 
+            <input placeholder="info@sitename" type="email" name="" required id="">
+           <select  name="" id="">
+            <option value="">Coultention</option>           
+           <option disabled selected value="" >Contact Subjects</option>
+            <option value="">Solution</option>
+            <option value="">Meeting</option>
+           </select>
+           <textarea  placeholder="Your Massage" name="" id="" ></textarea>
+          <div class="w-100 d-flex justify-content-center">
+            <button class="send_btn" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          </div>
+         </div>
+        <div class="col-12 col-lg-6 info_contact">
+
+          <div class="d-flex align-items-center ite_info"> <i class="fa-solid fa-location-dot"></i>
+           <div class="infos"><h4>address</h4> <h6>3395 E Noya polton Dhaka</h6>
+           </div>
+          </div>
+
+          <div class="d-flex align-items-center ite_info"> <i class="fa-solid fa-phone"></i>
+            <div class="infos"><h4>teliphone</h4> <h6>(+880) 16226 12546</h6>
+            </div>
+           </div>
+
+           <div class="d-flex align-items-center ite_info"> <i class="fa-regular fa-envelope-open"></i>
+            <div class="infos"><h4>email</h4> <h6>nahid@gmail.com</h6>
+            </div>
+           </div>
+
+           <div class="d-flex align-items-center ite_info"> <i class="fa-light fa-mobile"></i>
+            <div class="infos"><h4>phone</h4> <h6>(+880) 16226 12546</h6>
+            </div>
+           </div>
+
+           <div class="d-flex align-items-center ite_info"> <i class="fa-solid fa-ticket"></i>
+            <div class="infos"><h4>ticket info</h4> <h6>3395 65464 5465 8954</h6>
+            </div>
+           </div>
+           
+       
+          </div>    
+            <iframe class="col-12 col-lg-6 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29109.546613637987!2d90.41251665000001!3d24.21751795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375677274745e247%3A0x52e7c8e2664e6d98!2sMawna%20Union!5e0!3m2!1sen!2sbd!4v1675689537827!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>uuy
+      </div>
+    </div>
+
+
+             <!-- =============================================================
+                           form div
+     ============================================================= --->
+     <div style="overflow: hidden;" class="sponser_section">
+      <div class="container">
+        <div class="titles mb-5 text-center  ">
+          <h6>subtilte text here</h6>
+          <h4>corporate</h4>
+          <h2>transporataion</h2>
+        </div>
+      </div>
+      <div class="sponser_section_spon">
+       <div class="spon_i">
+         <div class="container">
+          <div class="row">
+            <div class="d-flex align-items-center ite_info col-lg-4 col-12 py-3"> <i class="fa-solid fa-handshake"></i>
+             <div class="infos"><h4>Webhost</h4> <h6>3395 E Noya polton Dhaka</h6>
+             </div>
+            </div>
+     
+            <div class="d-flex align-items-center ite_info col-lg-4 col-12 py-3"><i class="fa-solid fa-handshake"></i>
+              <div class="infos"><h4>Cretive It</h4> <h6>3395 E Noya polton Dhaka</h6>
+              </div>
+             </div>
+     
+             <div class="d-flex align-items-center ite_info col-lg-4 col-12 py-3"> <i class="fa-solid fa-handshake"></i></i>
+              <div class="infos"><h4>E.T.O</h4> <h6>3395 E Noya polton Dhaka</h6>
+              </div>
+             </div>
+             </div>
+         </div>
+       </div>
+       <div class="row ">
+        <div class="col-12 col-md-4 col-lg-2 sponer_ship py-5 icons_brand"><a href="#"><img class="px-3" src="website_images/brend_logo/brand3.png" alt=""></a> </div>
+        <div class="col-12 col-md-4 col-lg-2 sponer_ship py-5 icons_brand"><a href="#"><img class="px-3" src="website_images/brend_logo/brand2.png" alt=""></a> </div>
+        <div class="col-12 col-md-4 col-lg-2 sponer_ship py-5 icons_brand"><a href="#"><img class="px-3" src="website_images/brend_logo/brand1.png" alt=""></a> </div>
+        <div class="col-12 col-md-4 col-lg-2 sponer_ship py-5 icons_brand"><a href="#"><img class="px-3" src="website_images/brend_logo/brand4.png" alt=""></a> </div>
+        <div class="col-12 col-md-4 col-lg-2 sponer_ship py-5 icons_brand"><a href="#"><img class="px-3" src="website_images/brend_logo/brand5.png" alt=""></a> </div>
+        <div class="col-12 col-md-4 col-lg-2 sponer_ship py-5 icons_brand"><a href="#"><img class="px-3" src="website_images/brend_logo/brand6.png" alt=""></a> </div> 
+       </div>
+     </div>
+     </div>
+
+     <!-- =============================================================
+                           Footer div
+     ============================================================= --->
+
+<div class="fotter_sec">
+  <div class="container">
+  <!-- <img class="jio" src="jio.png" alt=""> -->
+    <div class="buy_ticket d-flex flex-lg-row flex-column justify-content-lg-between">
+      <div class="title_fo">
+        <h6>Subtittle text here</h6>
+        <div class="tik_li d-flex align-items-center justify-content-between justify-content-lg-start">
+          <h3>ticket buy</h3>
+          <h6 class="d-flex " >buy ticket to attend our event <br>
+            <i class="fa-solid fa-minus"></i>
+          </h6> 
+        </div>
+      </div>
+     <div class="">
+      <button class="buy_btn mt-3 mt-lg-0 w-100 w-lg-0"><a href="#">buy a ticket</a></button>
+     </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+     <div class="row logo">
+      <div class="col-12 d-flex justify-content-center">
+       <img src="website_images/logo/footer_web_logo.png" class="img-fluid" alt="">
+      </div>
+     </div>
+     <div class="content_fo row">
+      <div class="col-12 col-md-8 col-lg-4">
+        <p>Lorem ipsum, dolor sit amet . Quasi obcaecati nam earum dolore facere odio dolores modi aliquid laudantium itaque repellendus tempora aut ipsum, iure quibusdam id autem voluptate magni quae. <br><br>in soluta sapiente quasi at? <br>  temporibus fugit assumenda quibusdam vitae nam!</p>
+      </div>
+      <div class="col-12 col-md-4 col-lg-2">
+       <h5 class="text-uppercase head_fo">Fast manu</h5>
+       <ul class="fot_link p-0">
+         <li><a class="drop_down_items" href="#">Home</a></li>
+         <li><a class="drop_down_items" href="#">About</a></li>
+         <li><a class="drop_down_items" href="#">services</a></li>
+         <li><a class="drop_down_items" href="#">blog</a></li>
+         <li><a class="drop_down_items" href="#">Contact </a>
+       </ul>
+       </div>      
+        <div class="col-12 col-md-6 col-lg-3">
+       <h5 class="text-uppercase head_fo">services</h5>
+       <ul class="fot_link_ser p-0">
+         <li><a class="drop_down_items" href="#">Ataque possimus sed maxime maiores</a></li>
+         <li><a class="drop_down_items" href="#">Sed maxime maiores</a></li>
+         <li><a class="drop_down_items" href="#">Possimus sed maxime maiores</a></li>
+          <li><a class="drop_down_items" href="#">Sed maxime ataque possimus  maiores</a></li>
+         <li><a class="drop_down_items" href="#">Focuss possimus sed maxime maiores</a></li>
+
+       </ul>
+       </div>
+       <div class="col-12 col-md-6 col-lg-3">
+         <h5 class="text-uppercase head_fo">Mobile app</h5>
+         <a href="#"> <img class="pt-5" src="website_images/logo/play_store.png" alt=""></a>
+         <a href="#"> <img class="pt-3 " src="website_images/logo/app_store.png" alt=""></a>
+         </div> 
+     </div> 
+     <div class="row copy_right">
+       <div class="col-12 text-center text-md-start  col-md-6 col-lg-4">
+           <p class="copy_text">copyright <i class="fa-regular fa-copyright"></i> 2023 all right reserved</p>  
+       </div>   
+        <div class="col-12 text-center text-md-start col-md-6 col-lg-4">
+           <p class="copy_text">poweade by  <img src="website_images/logo/web_logo_2.png" alt=""></p>  
+       </div>       
+         <div class="col-12 offset-0 offset-md-3 offset-lg-0 col-md-6 col-lg-4">
+           <ul class="web_ico_set">
+             <li><a class="social_icons " href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+             <li><a class="social_icons " href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+             <li><a class="social_icons " href="#"><i class="fa-brands fa-twitter"></i></a></i></li>
+             <li><a class="social_icons " href="#"><i class="fa-brands fa-youtube"></i></a></li>
+             <li><a class="social_icons " href="#"><i class="fa-brands fa-github"></i></a></li>
+           </ul> 
+       </div>
+     </div>
+    </div>
+   </footer>
+  </div>
+</div>
+  <script src="/popover.js"></script>
+  <link rel="stylesheet" href="../assets/vendor/owl.carousel/assets/owl.theme.default.css">
+  <script src="jquery-ui.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="Bootstrap v5.0.0.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script type="text/javascript" src="slick.min.js"></script>
+  <script type="text/javascript" src="slick.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  
+  <!-- =============================================================
+                     Common Html
+     ============================================================= --->
+  <!---!    <button class="Read_more"><a href="#">Read More</a></button> -->
+  <!-- <div class="title text-center">
+     <h1>why choose us?</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur unde veritatis, ullam tempore doloribus consectetur voluptates aperiam sed deserunt, minima libero! Vero, sequi ut! At quia dolorum amet reiciendis iusto.</p>
+   </div> -->
+
+</body>
+
+</html>
+
+
